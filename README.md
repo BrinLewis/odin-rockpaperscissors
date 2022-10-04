@@ -7,13 +7,13 @@ To achieve this I will have to use most if not all (and maybe a little extra) of
 The main thing I want to do with this project is prove to myself my problem-solving abilities and show my strength in properly tackling problems with ensuring a good understanding of said problems before planning them out and eventually coding them.
 
 I shall hopefully also display clear understandings of some basic JS principles such as:
-Creating, asigning and chaning variables using let and const,
-Using arithmetic, assignment and comparison operators,
-Making use of operator precedence,
-Including a wide range of data types,
-Conditional statements such as if, else, else if and switch,
-Logical operators ||OR, &&AND and !NOT,
-Declaring and calling functions both built-in and custom,
+Creating, asigning and chaning variables using let and const,  
+Using arithmetic, assignment and comparison operators,  
+Making use of operator precedence,  
+Including a wide range of data types,  
+Conditional statements such as if, else, else if and switch,  
+Logical operators ||OR, &&AND and !NOT,  
+Declaring and calling functions both built-in and custom,  
 Function scope.
 
 
