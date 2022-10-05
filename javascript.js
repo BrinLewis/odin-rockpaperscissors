@@ -45,7 +45,7 @@ function playRound(playerSelection, computerSelection) {
     return roundWinner = "Computer";
   } else {
     console.log("You didn't choose a valid play.")
-    return roundWinner = "nobody";
+    return roundWinner = "invalid";
   }
 }
 
@@ -56,13 +56,15 @@ function game() {
     userScore = ++userScore;
   } else if (roundWinner == "Computer") {
     computerScore = ++computerScore
+  } else if (roundWinner == "invalid"){
+    i = i - 1;
   }}
   if (userScore > computerScore) {
     return `Congratulations! You beat the computer ${userScore}:${computerScore}!`
   } else if (userScore < computerScore) {
     return `Damn! The computer beat you ${computerScore}:${userScore}!`
   } else {
-    return `It's a draw! You drew ${userScore}:${computerScore}!`
+    return `It's a draw! Final score: ${userScore}:${computerScore}!`
   }
 }
 
