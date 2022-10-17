@@ -58,7 +58,9 @@ rockBtn.addEventListener("click", () => {
     userScore = ++userScore;
   } else if (roundWinner == "Computer") {
     computerScore = ++computerScore
-  }});
+  }
+  isGameOver();
+});
 const paperBtn = document.querySelector("#paperbtn");
 paperBtn.addEventListener("click", () => {
   playRound("paper", getComputerChoice()); //When paper button is clicked, play a round with paper as player's choice.
@@ -66,7 +68,9 @@ paperBtn.addEventListener("click", () => {
     userScore = ++userScore;
   } else if (roundWinner == "Computer") {
     computerScore = ++computerScore
-  }});
+  }
+  isGameOver();
+});
 const scissorsBtn = document.querySelector("#scissorsbtn");
 scissorsBtn.addEventListener("click", () => {
   playRound("scissors", getComputerChoice()); //When scissors button is clicked, play a round with scissors as player's choice.
@@ -74,9 +78,25 @@ scissorsBtn.addEventListener("click", () => {
     userScore = ++userScore;
   } else if (roundWinner == "Computer") {
     computerScore = ++computerScore
-  }});
+  }
+  isGameOver();
+});
 
 const results = document.querySelector(".results");
+
+function isGameOver() {
+  if (userScore === 5) {
+    results.textContent = `Congratulations! You beat the computer ${userScore}:${computerScore}!`
+    userScore = 0;
+    computerScore = 0;
+    return;
+  } else if (computerScore === 5) {
+    results.textContent = `Damn! The computer beat you ${computerScore}:${userScore}!`
+    userScore = 0;
+    computerScore = 0;
+    return;
+  }
+}
 
 
 /* function game() {
