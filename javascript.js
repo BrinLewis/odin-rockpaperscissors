@@ -61,6 +61,7 @@ rockBtn.addEventListener("click", () => {
   }
   isGameOver();
 });
+
 const paperBtn = document.querySelector("#paperbtn");
 paperBtn.addEventListener("click", () => {
   playRound("paper", getComputerChoice()); //When paper button is clicked, play a round with paper as player's choice.
@@ -71,6 +72,7 @@ paperBtn.addEventListener("click", () => {
   }
   isGameOver();
 });
+
 const scissorsBtn = document.querySelector("#scissorsbtn");
 scissorsBtn.addEventListener("click", () => {
   playRound("scissors", getComputerChoice()); //When scissors button is clicked, play a round with scissors as player's choice.
@@ -82,16 +84,29 @@ scissorsBtn.addEventListener("click", () => {
   isGameOver();
 });
 
+const resetBtn = document.querySelector(".reset");
+resetBtn.addEventListener("click", () => {
+  reset();
+});
+
+function reset() {
+  userScore = 0;
+  computerScore = 0;
+  results.textContent = "Choose your play: Rock, Paper, or Scissors..."
+}
+
 const results = document.querySelector(".results");
 
 function isGameOver() {
   if (userScore === 5) {
-    results.textContent = `Congratulations! You beat the computer ${userScore}:${computerScore}!`
+    results.textContent = `Congratulations! You beat the computer 
+    ${userScore}:${computerScore}! Press reset or pick an option to play again.`
     userScore = 0;
     computerScore = 0;
     return;
   } else if (computerScore === 5) {
-    results.textContent = `Damn! The computer beat you ${computerScore}:${userScore}!`
+    results.textContent = `Damn! The computer beat you 
+    ${computerScore}:${userScore}! Press reset or pick an option to play again.`
     userScore = 0;
     computerScore = 0;
     return;
