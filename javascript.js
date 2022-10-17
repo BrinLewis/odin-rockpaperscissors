@@ -43,7 +43,7 @@ function playRound(playerSelection, computerSelection) { //Function takes user a
     return roundWinner = "User";
   } else if (playerSelection == "scissors" && computerSelection == "rock") {
     results.textContent = `The computer chose rock, +1 point to them! 
-    You: ${userScore}, Computer:${computerScore + 1}`;
+    You: ${userScore}, Computer: ${computerScore + 1}`;
     return roundWinner = "Computer";
   } else {
     results.textContent = "You didn't choose a valid play."
