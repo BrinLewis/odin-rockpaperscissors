@@ -12,6 +12,7 @@
 
 .btn {
   height: 150px;
+  width: 150px;
 }
 
 .buttons {
@@ -29,6 +30,9 @@ button:hover {
 }
 
 .reset {
+  font-size: 15px;
+  width: 100px;
+  padding: 3px;
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
@@ -39,7 +43,7 @@ button:hover {
 .btn,
 .reset {
   border: solid yellow;
-  width: 150px
+  border-radius: 5px;
 }
 
 .buttons,
