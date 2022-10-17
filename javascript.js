@@ -97,25 +97,3 @@ function isGameOver() {
     return;
   }
 }
-
-
-/* function game() {
- for (let i = 0; i < 5; i++) { //Loop to play a round and add a point to winners score 5 times.
-   playRound(getPlayerChoice(), getComputerChoice());
- if (roundWinner == "User") {
-   userScore = ++userScore;
- } else if (roundWinner == "Computer") {
-   computerScore = ++computerScore
- } else if (roundWinner == "invalid"){
-   i = i - 1; //If user's input is invalid, this code takes one off of the loop number so it doesn't count as one of the five rounds.
- }}
- if (userScore > computerScore) { //Evaluates the final scores and declares a winner.
-   return `Congratulations! You beat the computer ${userScore}:${computerScore}!`
- } else if (userScore < computerScore) {
-   return `Damn! The computer beat you ${computerScore}:${userScore}!`
- } else {
-   return `It's a draw! Final score: ${userScore}:${computerScore}!`
- }
-}
-
-results.textContent = game()); //Logs the game function to the console to begin the game. */
