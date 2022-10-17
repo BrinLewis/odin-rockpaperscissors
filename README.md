@@ -18,3 +18,6 @@ Logical operators &&AND,
 Declaring and calling functions both built-in and custom,  
 Function scope.
 
+UI UPDATE: I have now added a working UI to the game so it can be played in the browser rather than the console.  
+  
+This update show's a basic understanding of event listeners and DOM manipulation and also displays an ability to manipulate and modify pre-written code.
